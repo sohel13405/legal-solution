@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Legal solution</title>
+  <!-- font style  -->
+    <style>
+        .eb-garamond {
+  font-family: "EB Garamond", serif;
+}
+.poppins {
+  font-family: "Poppins", serif;
+}
+    </style>
+
 </head>
-<body>
+<body class="eb-garamond">
     <header class="container mx-auto mt-10">
         <nav class="flex items-center justify-between">
             <!-- logo  -->
@@ -18,7 +30,7 @@
             </div>
             <!-- bars  -->
              <div>
-                <ul class="text-[1rem] font-normal text-gray-500 flex gap-12 ">
+                <ul class=" text-[1rem] font-normal text-gray-500 flex gap-12 ">
                     <li><a href="">Home</a></li>
                     <li><a href="">Services 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
@@ -44,9 +56,30 @@
              </div>
              <!-- button  -->
               <div>
-                <button class="bg-[#B68C5A] py-3 px-6 text-white rounded-lg">Free Consultation</button>
+                <button class="btn text-[18px] bg-[#B68C5A] py-3 px-6 text-white rounded-lg">Free Consultation</button>
               </div>
         </nav>
+        <!-- banner start  -->
+        <div class=" banner w-[1180px] h-[550px] mt-24 mx-auto">
+                <!-- parent div  -->
+            <div class="">
+                <div><img class="absolute" src="./images/banner.png" alt=""></div>
+               <div class="relative p-24">
+                  <!-- text  -->
+                <div class="relative text-center space-y-8">
+                    <h1 class="text-white text-7xl font-bold">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="text-[#ede9e9] text-xl font-normal poppins ">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                </div>
+                <!-- input field  -->
+                 <div class="relative text-center space-y-8 space-x-2">
+                    <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs text-[1rem]" />
+                    <button class="btn bg-[#B68C5A] py-3 px-6 text-[1rem] text-white rounded-lg border-none">Search</button>
+                 </div>
+               </div>
+
+            </div> <!-- parent div end  -->
+            
+        </div>   <!-- banner end  -->
 
     </header>
 
